@@ -19,7 +19,7 @@ it("should should be 0 for this abstract shape", function() {
 describe("RGB", function() {
 it("should return RGB as a string", function() {
   expect(shape.getRGB()).toEqual("rgb(182, 15, 91)");
-  });
+  });	
 });
 
 });

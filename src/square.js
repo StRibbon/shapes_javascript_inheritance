@@ -15,6 +15,8 @@ Square.prototype.perimiter = function(){
 	return this.sideLength * 4;
 }
 
+
+
 // TODO: Implement area, perimeter, draw and toString for Square.
 // DO NOT reimplement getRGB.  That should only have to be done once.
 
