@@ -21,10 +21,24 @@ Shape.prototype.toString = function() {
   return "[Shape sides:" + this.sides + ", color:" + this.color +" ]"
 };
 
+// Return the rgb value (as a string) for the color you've selected.
+// You can have a preset list of colors that you switch on.
+
 Shape.prototype.getRGB = function() {
-  // Return the rgb value (as a string) for the color you've selected.
-  // You can have a preset list of colors that you switch on.
-  return "rgb(0,0,0)";
-}
+  
+  var colors = {
+		red: "rgb(182, 15, 91)",
+		green: "rgb(118, 182, 15)",
+		blue: "rgb(15, 141, 182)",
+	};
+
+	for(var key in colors){
+		if(this.color === key)
+			return colors[key];
+    }
+};
+
+//var blueShape = new Shape(4, "blue");	
+//blueShape.getRGB();
 
 module.exports = Shape;

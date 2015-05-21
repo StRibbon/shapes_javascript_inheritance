@@ -10,11 +10,16 @@ describe("Shape", function() {
     shape = new Shape(1, "red");
   });
 
-  describe("Area", function() {
-    it("should should be 0 for this abstract shape", function() {
-      expect(shape.area()).toEqual(0);
-    });
+describe("Area", function() {
+it("should should be 0 for this abstract shape", function() {
+  expect(shape.area()).toEqual(0);
   });
+});
 
-  // Write more specs!!
+describe("RGB", function() {
+it("should return RGB as a string", function() {
+  expect(shape.getRGB()).toEqual("rgb(182, 15, 91)");
+  });
+});
+
 });
